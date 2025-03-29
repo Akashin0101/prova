@@ -18,7 +18,7 @@ const ScrollScreen = () => {
                             iconName = focused ? 'list' : 'list-outline';
                         } else if (route.name === 'Seção') {
                             iconName = focused ? 'create' : 'create-outline';
-                        } else if (route.name === 'Formulário') {
+                        } else if (route.name === 'Formulario') {
                             iconName = focused ? 'layers' : 'layers-outline';
                         }
                         return <Ionicons name={iconName} size={size} color={color} />;
@@ -29,7 +29,7 @@ const ScrollScreen = () => {
             >
                 <Tab.Screen name="Lista" component={FlatListScreen} />
                 <Tab.Screen name="Seção" component={SectionListScreen} />
-                <Tab.Screen name="Formulário" component={FormScreen} />
+                <Tab.Screen name="Formulario" component={FormScreen} />
             </Tab.Navigator>
         
     );
